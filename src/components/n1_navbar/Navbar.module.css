@@ -1,16 +1,16 @@
 .navbar {
-    background-color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .ul {
-    line-height: 70px;
-    font-weight: 500;
+  line-height: 70px;
+  font-weight: 500;
 }
 
 .ul li {
-    margin: 0 10px;
+  margin: 0 10px;
 }

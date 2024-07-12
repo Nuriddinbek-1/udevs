@@ -8,6 +8,8 @@ function MainPage() {
   return (
     <div>
       <div className="container flex mt-10">
+
+        {/* left side of screen */}
         <div className="basis-1/2 font-semibold">
           <img src={logo} alt="udevs-logo" />
           <h1 className="my-5 text-5xl text-custom-grey">
@@ -18,6 +20,8 @@ function MainPage() {
             {t("main_page.button")}
           </button>
         </div>
+
+        {/* right side of screen */}
         <div className="basis-1/2">
           <img src={right_screen_img} alt="udevs main image" />
         </div>

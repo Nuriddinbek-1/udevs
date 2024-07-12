@@ -3,12 +3,12 @@ import Mobile_right_screen_img from "./images/right_screen_img.png";
 import Mobile_right_screen_img_bg from "./images/right_screen_img_bg.png";
 
 // all logos
-import iphone_logo from './images/iphone.svg'
-import android_logo from './images/android.svg'
-import crossplatform_logo from './images/crossplatform.svg'
-import swift_logo from './images/swift.svg'
-import kotlin_logo from './images/kotlin.svg'
-import flutter_logo from './images/flutter.svg'
+import iphone_logo from "./images/iphone.svg";
+import android_logo from "./images/android.svg";
+import crossplatform_logo from "./images/crossplatform.svg";
+import swift_logo from "./images/swift.svg";
+import kotlin_logo from "./images/kotlin.svg";
+import flutter_logo from "./images/flutter.svg";
 
 function MobileApp() {
   const { t } = useTranslation();

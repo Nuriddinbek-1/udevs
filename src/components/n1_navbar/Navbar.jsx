@@ -13,15 +13,18 @@ function Navbar() {
   return (
     <div className={`${navStyle.navbar}`}>
       <div className={`container flex justify-between items-center`}>
+
+        {/* logo of udevs on top left corner in navbar */}
         <img src={logo} alt="udev-logo" width={100} />
 
+        {/* all section in navbar */}
         <ul className={`${navStyle.ul} flex`}>
           <li>
-            <a href="#ourservices" >{t("navbar.li1")}</a>
+            <a href="#ourservices">{t("navbar.li1")}</a>
           </li>
           <li>
             <a href="#team">{t("navbar.li2")}</a>
-            </li>
+          </li>
           <li>
             <a href="mobileapp">
               <NavServices />
@@ -35,18 +38,18 @@ function Navbar() {
           </li>
           <li>
             <a href="">
-            <NavPortfolio />
+              <NavPortfolio />
             </a>
           </li>
           <li>
             <NavLanguages />
           </li>
           <li>
-           <a href="#">
-           <button className="text-white bg-custom-blue rounded-custom-r leading-[35px] px-5">
-              {t("navbar.li8")}
-            </button>
-           </a>
+            <a href="#">
+              <button className="text-white bg-custom-blue rounded-custom-r leading-[35px] px-5">
+                {t("navbar.li8")}
+              </button>
+            </a>
           </li>
         </ul>
       </div>

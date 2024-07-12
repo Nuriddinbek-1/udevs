@@ -9,8 +9,8 @@ export default {
         "custom-green": "#F4F7FF",
       },
       borderRadius: {
-        "custom-r": "7px"
-      }
+        "custom-r": "7px",
+      },
     },
   },
   plugins: [],
