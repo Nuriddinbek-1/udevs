@@ -1,0 +1,30 @@
+{
+    "navbar": {
+        "li1": "Direction",
+        "li2": "Command",
+        "li3": {
+            "0": "Services",
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": ""
+        },
+        "li4": "Tools",
+        "li5": "Clients",
+        "li6": {
+            "0": "Portfolio",
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": ""
+        },
+        "li7": "Languages",
+        "li8": "Contact"
+    },
+    "main_page": {
+        "title": "IT-Outsourcing Company",
+        "subtitle": "Development and implementation ERP systems",
+        "button": "Contact"
+    }
+}
