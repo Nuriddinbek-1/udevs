@@ -20,7 +20,7 @@ function Navbar() {
             <a href="#ourservices" >{t("navbar.li1")}</a>
           </li>
           <li>
-            <a href="team">{t("navbar.li2")}</a>
+            <a href="#team">{t("navbar.li2")}</a>
             </li>
           <li>
             <a href="mobileapp">
