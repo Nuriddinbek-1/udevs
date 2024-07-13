@@ -1,4 +1,12 @@
 .big_box div p {
+    margin-top: 10px;
     font-size: 20px;
     font-weight: 400;
+}
+
+@media not all and (min-width: 1024px) {
+    .big_box div p {
+        font-size: 16px;
+        font-weight: 500;
+    }
 }

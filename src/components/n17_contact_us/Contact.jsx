@@ -16,7 +16,7 @@ function Contact() {
   const { t } = useTranslation()
 
   return (
-    <div className="py-5 lg:py-20">
+    <div className="py-5 lg:py-20" id="contact">
       <div className="container">
         <h1 className="title">{t('contact.header')}</h1>
         <div className={`${contactStyle.box} rounded-custom-r`}>
@@ -42,46 +42,68 @@ function Contact() {
               <div className="flex items-center">
                 <img src={location} alt="location icon" width={25} />
                 <p className="pl-2">
-                  {t('contact.location')}
+                  <a href="https://yandex.com/map-widget/v1/?um=constructor%3A3d9eefa927bd54bcc9e8fa398a73c8cafb60622737263c96ad9341c32c21fa69&source=constructor">
+                    {t('contact.location')}
+                  </a>
                 </p>
               </div>
               <div className="flex items-center">
                 <img src={phone} alt="phone icon" width={25} />
-                <p className="pl-2">+998 33 66 00 999</p>
+                <p className="pl-2">
+                  <a href="tel:+998 33 66 00 999">
+                    +998 33 66 00 999
+                  </a>
+                </p>
               </div>
               <div className="flex items-center">
                 <img src={email} alt="email icon" width={25} />
-                <p className="pl-2">Email iconazizbek.b@udevs.io</p>
+                <p className="pl-2">
+                  <a href="email:iconazizbek.b@udevs.io">
+                    Email iconazizbek.b@udevs.io
+                  </a>
+                </p>
               </div>
               <div className="flex items-center">
                 <img src={telegram} alt="telegram icon" width={25} />
-                <p className="pl-2">t.me/azizbekbakhodirov</p>
+                <p className="pl-2">
+                  <a href="https://t.me/azizbekbakhodirov">
+                    t.me/azizbekbakhodirov
+                  </a>
+                </p>
               </div>
               <div className="flex items-center">
+                <a href="#">
                 <img
                   src={youtube}
                   alt="youtube icon"
                   className="mr-4"
                   width={25}
                 />
+                </a>
+                <a href="#">
                 <img
                   src={instagram}
                   alt="instagram icon"
                   className="mr-4"
                   width={30}
                 />
+                </a>
+                <a href="#">
                 <img
                   src={facebook}
                   alt="facebook icon"
                   className="mr-4"
                   width={25}
                 />
-                <img
+                </a>
+                <a href="#">
+                  <img
                   src={twitter}
                   alt="twitter icon"
                   className="mr-4"
                   width={25}
                 />
+                </a>
               </div>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2995.7955473192615!2d69.30557207553122!3d41.335058999240175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDIwJzA2LjIiTiA2OcKwMTgnMjkuMyJF!5e0!3m2!1sen!2s!4v1720797874777!5m2!1sen!2s"

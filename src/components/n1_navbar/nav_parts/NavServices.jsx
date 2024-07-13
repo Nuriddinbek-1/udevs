@@ -2,6 +2,13 @@ import { DownOutlined } from "@ant-design/icons";
 import { Dropdown, Space } from "antd";
 import { useTranslation } from "react-i18next";
 
+// icons
+import mobile_icon from '../../n3_our_services/images/mobile.svg'
+import erp_icon from '../../n3_our_services/images/erp.svg'
+import design_icon from '../../n3_our_services/images/design.svg'
+import settings_icon from '../../n3_our_services/images/settings.svg'
+import computer_icon from '../../n3_our_services/images/computer.svg'
+
 function NavServices() {
 
   const { t } = useTranslation()
@@ -13,8 +20,13 @@ function NavServices() {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://www.antgroup.com">
-          1st menu item
+          href="https://www.antgroup.com"
+          className="flex items-center"
+          >
+          <span className="p-2 w-[40px] h-[40px] rounded-[50%] bg-custom-green inline-block justify-around flex items-center mr-1">
+          <img src={mobile_icon} alt="mobile icon" />
+          </span>
+          <p>{t('services.box2')}</p>
         </a>
       ),
     },
@@ -24,8 +36,13 @@ function NavServices() {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://www.aliyun.com">
-          2nd menu item
+          href="https://www.aliyun.com"
+          className="flex items-center"
+          >
+          <span className="p-2 w-[40px] h-[40px] rounded-[50%] bg-custom-green inline-block justify-around flex items-center mr-1">
+          <img src={erp_icon} alt="erp icon" />
+          </span>
+          <p>{t('services.box3')}</p>
         </a>
       ),
     },
@@ -35,23 +52,48 @@ function NavServices() {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://www.luohanacademy.com">
-          3rd menu item
+          href="https://www.luohanacademy.com"
+          className="flex items-center"
+          >
+          <span className="p-2 w-[40px] h-[40px] rounded-[50%] bg-custom-green inline-block justify-around flex items-center mr-1">
+          <img src={design_icon} alt="design icon" />
+          </span>
+          <p>{t('services.box4')}</p>
         </a>
       ),
     },
     {
       key: "4",
-      danger: true,
       label: (
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://www.luohanacademy.com">
-          3rd menu item
+          href="https://www.luohanacademy.com"
+          className="flex items-center"
+          >
+          <span className="p-2 w-[40px] h-[40px] rounded-[50%] bg-custom-green inline-block justify-around flex items-center mr-1">
+          <img src={settings_icon} alt="settings icon" />
+          </span>
+          <p>{t('services.box5')}</p>
         </a>
       ),
     },
+    {
+      key: "5",
+      label: (
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.luohanacademy.com"
+          className="flex items-center"
+          >
+          <span className="p-2 w-[40px] h-[40px] rounded-[50%] bg-custom-green inline-block justify-around flex items-center mr-1">
+          <img src={computer_icon} alt="computer icon" />
+          </span>
+          <p>{t('services.box6')}</p>
+        </a>
+      ),
+    }
   ];
 
   return (
@@ -61,7 +103,7 @@ function NavServices() {
       }}>
       <a onClick={(e) => e.preventDefault()}>
         <Space>
-          {t('navbar.li6.0')}
+          {t('navbar.li3.0')}
           <DownOutlined />
         </Space>
       </a>

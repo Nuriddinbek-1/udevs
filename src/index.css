@@ -8,6 +8,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
 .container {
   width: 80%;
   max-width: 1920px;
@@ -32,6 +37,10 @@ body {
 }
 
 @media not all and (min-width: 1024px) {
+  html {
+    scroll-padding-top: 60px;
+  }
+
   .container {
     width: 100%;
     padding: 0 15px;

@@ -13,8 +13,10 @@ function NavPortfolio() {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://www.antgroup.com">
-          1st menu item
+          href="#"
+          className="flex items-center">
+          <span className="w-[30px] h-[30px] rounded-[50%] bg-custom-green inline-block justify-around flex items-center mr-1">D</span>
+          Developer
         </a>
       ),
     },
@@ -24,8 +26,10 @@ function NavPortfolio() {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://www.aliyun.com">
-          2nd menu item
+          href="#"
+          className="flex items-center">
+          <span className="w-[30px] h-[30px] rounded-[50%] bg-custom-green inline-block justify-around flex items-center mr-1">S</span>
+          Sms.uz
         </a>
       ),
     },
@@ -35,20 +39,23 @@ function NavPortfolio() {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://www.luohanacademy.com">
-          3rd menu item
+          href="#"
+          className="flex items-center">
+          <span className="w-[30px] h-[30px] rounded-[50%] bg-custom-green inline-block justify-around flex items-center mr-1">G</span>
+          Goodzone
         </a>
       ),
     },
     {
       key: "4",
-      danger: true,
       label: (
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://www.luohanacademy.com">
-          3rd menu item
+          href="#" 
+          className="flex items-center">
+          <span className="w-[30px] h-[30px] rounded-[50%] bg-custom-green inline-block justify-around flex items-center mr-1">I</span>
+          Iman
         </a>
       ),
     },

@@ -15,26 +15,26 @@ import flutter_logo from "./images/flutter.svg";
 
 // aos library
 import Aos from "aos";
-import 'aos/dist/aos.css'
+import "aos/dist/aos.css";
 
 function MobileApp() {
-  
   const { t } = useTranslation();
 
   useEffect(() => {
     Aos.init();
-  }, [])
+  }, []);
 
   return (
     <div className="mt-10" id="mobileapp">
       <div className="container">
-        <h1 className="title">{t('mobile_app.header')}</h1>
+        <h1 className="title">{t("mobile_app.header")}</h1>
         <div className="grid lg:grid-cols-2 gap-20">
           <div className="font-semibold lg:pr-20 lg:order-first">
-            <p className="subtitle">
-              {t('mobile_app.info')}
-            </p>
-            <div className="grid grid-cols-3 gap-3 my-10 text-xl">
+            <p className="subtitle">{t("mobile_app.info")}</p>
+            <div
+              className="grid grid-cols-3 gap-3 my-10 text-xl"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom">
               <div className="p-3 bg-custom-green rounded-custom-r h-[120px]">
                 <img src={iphone_logo} alt="iphone" />
                 <p className="text-sm">IOS</p>
@@ -49,8 +49,13 @@ function MobileApp() {
               </div>
             </div>
 
-            <p className="text-3xl text-gray-700">{t('mobile_app.technologies')}</p>
-            <div className="flex flex-wrap text-center my-5 text-xl">
+            <p className="text-3xl text-gray-700">
+              {t("mobile_app.technologies")}
+            </p>
+            <div
+              className="flex flex-wrap text-center my-5 text-xl"
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom">
               <div className="mr-10">
                 <img src={swift_logo} alt="swift" />
                 <p>Swift</p>
@@ -76,7 +81,8 @@ function MobileApp() {
             <img
               src={Mobile_right_screen_img}
               alt="mobile main image"
-              width={"100%"}
+              width={"100%"} 
+              data-aos="zoom-in-up"
             />
           </div>
         </div>
