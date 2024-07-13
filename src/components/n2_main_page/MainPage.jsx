@@ -12,7 +12,7 @@ function MainPage() {
 
   return (
     <div>
-      <div className="container flex flex-col lg:flex-row mt-10">
+      <div className="container flex flex-col lg:flex-row lg:pt-10">
 
         {/* left side of screen */}
         <div className="lg:basis-1/2 font-semibold text-center lg:text-left">

@@ -25,7 +25,7 @@ function OurServices() {
   }, []);
 
   return (
-    <div className="mt-40" id="ourservices">
+    <div className="mt-20 lg:mt-40" id="ourservices">
       <div className="container">
 
         {/* title */}
