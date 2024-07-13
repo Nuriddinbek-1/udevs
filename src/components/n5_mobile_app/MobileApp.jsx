@@ -35,17 +35,17 @@ function MobileApp() {
               className="grid grid-cols-3 gap-3 my-10 text-xl"
               data-aos="fade-up"
               data-aos-anchor-placement="center-bottom">
-              <div className="p-3 bg-custom-green rounded-custom-r h-[120px]">
-                <img src={iphone_logo} alt="iphone" />
-                <p className="text-sm">IOS</p>
+              <div className="p-3 bg-custom-green rounded-custom-r h-[100px]">
+                <img src={iphone_logo} alt="iphone" className="w-[40px] lg:w-[60px]"/>
+                <p className="text-sm lg:text-xl">IOS</p>
               </div>
-              <div className="p-3 bg-custom-green rounded-custom-r h-[120px]">
-                <img src={android_logo} alt="android" />
-                <p className="text-sm">Android</p>
+              <div className="p-3 bg-custom-green rounded-custom-r h-[100px]">
+                <img src={android_logo} alt="android" className="w-[40px] lg:w-[60px]"/>
+                <p className="text-sm lg:text-xl">Android</p>
               </div>
-              <div className="p-3 bg-custom-green rounded-custom-r h-[120px]">
-                <img src={crossplatform_logo} alt="crossplatform" />
-                <p className="text-sm">Crossplatform</p>
+              <div className="p-3 bg-custom-green rounded-custom-r h-[100px]">
+                <img src={crossplatform_logo} alt="crossplatform" className="w-[40px] lg:w-[60px]"/>
+                <p className="text-sm lg:text-xl">Crossplatform</p>
               </div>
             </div>
 
