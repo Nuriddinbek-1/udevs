@@ -1,16 +1,23 @@
 .navbar {
   background-color: white;
   position: fixed;
+  z-index: 500;
   top: 0;
   left: 0;
   right: 0;
 }
 
 .ul {
-  line-height: 70px;
   font-weight: 500;
 }
 
 .ul li {
+  line-height: 70px;
   margin: 0 10px;
+}
+
+@media not all and (min-width: 1024px) {
+  .ul li {
+    line-height: 40px;
+  }
 }

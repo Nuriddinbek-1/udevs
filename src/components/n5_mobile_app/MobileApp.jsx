@@ -1,4 +1,7 @@
+import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
+
+// images
 import Mobile_right_screen_img from "./images/right_screen_img.png";
 import Mobile_right_screen_img_bg from "./images/right_screen_img_bg.png";
 
@@ -10,37 +13,43 @@ import swift_logo from "./images/swift.svg";
 import kotlin_logo from "./images/kotlin.svg";
 import flutter_logo from "./images/flutter.svg";
 
+// aos library
+import Aos from "aos";
+import 'aos/dist/aos.css'
+
 function MobileApp() {
+  
   const { t } = useTranslation();
+
+  useEffect(() => {
+    Aos.init();
+  }, [])
 
   return (
     <div className="mt-10" id="mobileapp">
       <div className="container">
-        <h1 className="title">Development of mobile application</h1>
-        <div className="grid grid-cols-2 gap-20">
-          <div className="font-semibold pr-20">
+        <h1 className="title">{t('mobile_app.header')}</h1>
+        <div className="grid lg:grid-cols-2 gap-20">
+          <div className="font-semibold lg:pr-20 lg:order-first">
             <p className="subtitle">
-              {t("main_page.subtitle")}
-              For each project, we form a team that includes a project manager,
-              business analyst, UI / UX designer, DevOps, QA engineer, backend
-              and front-end developers.
+              {t('mobile_app.info')}
             </p>
             <div className="grid grid-cols-3 gap-3 my-10 text-xl">
               <div className="p-3 bg-custom-green rounded-custom-r h-[120px]">
                 <img src={iphone_logo} alt="iphone" />
-                <p>IOS</p>
+                <p className="text-sm">IOS</p>
               </div>
               <div className="p-3 bg-custom-green rounded-custom-r h-[120px]">
                 <img src={android_logo} alt="android" />
-                <p>Android</p>
+                <p className="text-sm">Android</p>
               </div>
               <div className="p-3 bg-custom-green rounded-custom-r h-[120px]">
                 <img src={crossplatform_logo} alt="crossplatform" />
-                <p>Crossplatform</p>
+                <p className="text-sm">Crossplatform</p>
               </div>
             </div>
 
-            <p className="text-3xl text-gray-700">Technologies</p>
+            <p className="text-3xl text-gray-700">{t('mobile_app.technologies')}</p>
             <div className="flex flex-wrap text-center my-5 text-xl">
               <div className="mr-10">
                 <img src={swift_logo} alt="swift" />
@@ -57,7 +66,7 @@ function MobileApp() {
             </div>
           </div>
           <div
-            className="rounded-[25px] overflow:hidden"
+            className="rounded-[25px] overflow:hidden order-first"
             style={{
               backgroundImage: `url(${Mobile_right_screen_img_bg})`,
               backgroundPosition: "center",

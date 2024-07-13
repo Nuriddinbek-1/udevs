@@ -24,3 +24,10 @@
 .form button {
   margin-top: 20px;
 }
+
+@media not all and (min-width: 1024px) {
+  .box {
+    padding: 0;
+    box-shadow: none;
+  }
+}

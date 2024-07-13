@@ -5,8 +5,12 @@ import logo from "../../assets/logo.svg";
 import instagram from "../../assets/instagram.svg"
 import twitter from "../../assets/twitter.svg"
 import youtube from "../../assets/youtube.svg"
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+
+  const { t } = useTranslation()
+
   return (
     <div className="bg-custom-green pb-10" id="footer">
       <div className="container">
@@ -24,64 +28,66 @@ function Footer() {
         {/* all links in the middle of the footer */}
         <div className={`${footerStyle.footer}`}>
           <div>
-            <h4 className="">About Us</h4>
+            <h4 className="">{t('footer.about.header')}</h4>
             <ul>
               <li>
-                <a href="">Direction</a>
+                <a href="">{t('footer.about.1')}</a>
               </li>
               <li>
-                <a href="">Command</a>
+                <a href="">{t('footer.about.2')}</a>
               </li>
               <li>
-                <a href="">Tools</a>
+                <a href="">{t('footer.about.3')}</a>
               </li>
               <li>
-                <a href="">Clients</a>
+                <a href="">{t('footer.about.4')}</a>
               </li>
             </ul>
           </div>
           <div>
-            <h4 className="">Services</h4>
+            <h4 className="">{t('footer.services.header')}</h4>
             <ul>
               <li>
-                <a href="">Development of mobile applications</a>
+                <a href="">{t('footer.services.1')}</a>
               </li>
               <li>
-                <a href="">Development and implementation ERP systems</a>
+                <a href="">{t('footer.services.2')}</a>
               </li>
               <li>
-                <a href="">User interface, User experience design</a>
+                <a href="">{t('footer.services.3')}</a>
               </li>
               <li>
-                <a href="">IT consulting</a>
+                <a href="">{t('footer.services.4')}</a>
               </li>
               <li>
-                <a href="#">Optimization IT consulting infrastructure</a>
+                <a href="#">{t('footer.services.5')}</a>
               </li>
             </ul>
           </div>
           <div>
-            <h4 className="">Portfolio</h4>
+            <h4 className="">{t('footer.portfolio.header')}</h4>
             <ul>
               <li>
-                <a href="">Delever</a>
+                <a href="">{t('footer.portfolio.1')}</a>
               </li>
               <li>
-                <a href="">Sms.uz</a>
+                <a href="">{t('footer.portfolio.2')}</a>
               </li>
               <li>
-                <a href="">Goodzone</a>
+                <a href="">{t('footer.portfolio.3')}</a>
               </li>
               <li>
-                <a href="">Iman</a>
+                <a href="">{t('footer.portfolio.4')}</a>
               </li>
             </ul>
           </div>
         </div>
         <hr className="my-5"/>
-        <div className="flex justify-between items-center">
-        <p>© 2024 Udevs. All rights reserved</p>
-        <div className="flex">
+        <div className="flex flex-col-reverse lg:flex-row justify-between items-center">
+        <p>
+          {t('footer.copyright')}
+        </p>
+        <div className="flex mb-5 lg:mb-0">
             <div className="rounded-[50%] bg-[#DDE6FF] p-1 w-[40px] h-[40px]">
                 <img src={instagram} alt="instagram"/>
             </div>

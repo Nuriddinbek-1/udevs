@@ -9,26 +9,30 @@ import youtube from "../../assets/youtube.svg";
 import instagram from "../../assets/instagram.svg";
 import facebook from "../../assets/facebook.svg";
 import twitter from "../../assets/twitter.svg";
+import { useTranslation } from "react-i18next";
 
 function Contact() {
+
+  const { t } = useTranslation()
+
   return (
-    <div className="py-20">
+    <div className="py-5 lg:py-20">
       <div className="container">
-        <h1 className="title">Contact Us</h1>
+        <h1 className="title">{t('contact.header')}</h1>
         <div className={`${contactStyle.box} rounded-custom-r`}>
-          <p>Leave us a message</p>
-          <div className="grid grid-cols-2 gap-20">
+          <p>{t('contact.leave_m')}</p>
+          <div className="grid lg:grid-cols-2 gap-20">
             {/* left side */}
             <div>
               <form action="" className={`${contactStyle.form} flex flex-col`}>
-                <input type="text" placeholder="Your name" />
-                <input type="email" name="" id="" placeholder="Your email" />
+                <input type="text" placeholder={t('contact.form_name')} />
+                <input type="email" name="" id="" placeholder={t('contact.form_email')} />
                 <textarea
                   name=""
                   id=""
-                  placeholder="Briefly describe your project"></textarea>
+                  placeholder={t('contact.form_text')}></textarea>
                 <button className="mr-auto bg-custom-blue text-white rounded-custom-r px-20 py-2 text-2xl">
-                  Send
+                  {t('contact.form_button')}
                 </button>
               </form>
             </div>
@@ -38,7 +42,7 @@ function Contact() {
               <div className="flex items-center">
                 <img src={location} alt="location icon" width={25} />
                 <p className="pl-2">
-                  Ташкент, Мирзо-Улугбекский район, 5-й пр. Курган, 32 адрес
+                  {t('contact.location')}
                 </p>
               </div>
               <div className="flex items-center">

@@ -23,8 +23,64 @@
         "li8": "Contact"
     },
     "main_page": {
-        "title": "IT-Outsourcing Company",
-        "subtitle": "Development and implementation ERP systems",
+        "header": "IT-Outsourcing Company",
+        "info": "Development and implementation ERP systems",
+        "typed_animation1": "Development of mobile applications",
+        "typed_animation2": "User interface, User experience design",
+        "typed_animation3": "Optimization IT consulting infrastructure",
         "button": "Contact"
+    },
+    "services": {
+        "header": "Our services",
+        "box1": "Team",
+        "box2": "Development of mobile applications",
+        "box3": "Development and implementation ERP systems",
+        "box4": "User interface, User experience design",
+        "box5": "Optimization IT consulting infrastructure",
+        "box6": "IT consulting"
+    },
+    "team": {
+        "header": "Team",
+        "info": "For each project, we form a team that includes a project manager, business analyst, UI / UX designer, DevOps, QA engineer, backend and front-end developers.",
+        "counter_text": "Dedicated team"
+    },
+    "mobile_app": {
+        "header": "Development of mobile applications",
+        "info": "In collaboration with startups, we have learned how to create a creative and functional user interface for mobile applications.",
+        "technologies": "Technologies"
+    },
+    "contact": {
+        "header": "Contact us",
+        "leave_m": "Leave us a message",
+        "form_name": "Your name",
+        "form_email": "Your email",
+        "form_text": "Briefly describe your project",
+        "form_button": "Send",
+        "location": "Tashkent city, Mirzo-Ulugbek district, Kurgan street, home-32"
+    },
+    "footer": {
+        "about": {
+            "header": "About Us",
+            "1": "Direction",
+            "2": "Commands",
+            "3": "Tools",
+            "4": "Clients"
+        },
+        "services": {
+            "header": "Services",
+            "1": "Development of mobile applications",
+            "2": "Development and implementation ERP systems",
+            "3": "User interface, User experience design",
+            "4": "IT consulting",
+            "5": "Optimization IT consulting infrastructure"
+        },
+        "portfolio": {
+            "header": "Portfolio",
+            "1": "Deliver",
+            "2": "Sms.uz",
+            "3": "Goodzone",
+            "4": "Iman"
+        },
+        "copyright": "© 2024 Udevs. All rights reserved"
     }
 }
