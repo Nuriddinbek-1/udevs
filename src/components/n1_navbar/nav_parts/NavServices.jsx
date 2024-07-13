@@ -18,9 +18,7 @@ function NavServices() {
       key: "1",
       label: (
         <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.antgroup.com"
+          href="#mobileapp"
           className="flex items-center"
           >
           <span className="p-2 w-[40px] h-[40px] rounded-[50%] bg-custom-green inline-block justify-around flex items-center mr-1">
@@ -34,9 +32,7 @@ function NavServices() {
       key: "2",
       label: (
         <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.aliyun.com"
+          href="#"
           className="flex items-center"
           >
           <span className="p-2 w-[40px] h-[40px] rounded-[50%] bg-custom-green inline-block justify-around flex items-center mr-1">
@@ -50,9 +46,7 @@ function NavServices() {
       key: "3",
       label: (
         <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.luohanacademy.com"
+          href="#"
           className="flex items-center"
           >
           <span className="p-2 w-[40px] h-[40px] rounded-[50%] bg-custom-green inline-block justify-around flex items-center mr-1">
@@ -66,9 +60,7 @@ function NavServices() {
       key: "4",
       label: (
         <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.luohanacademy.com"
+          href="#"
           className="flex items-center"
           >
           <span className="p-2 w-[40px] h-[40px] rounded-[50%] bg-custom-green inline-block justify-around flex items-center mr-1">
@@ -82,9 +74,7 @@ function NavServices() {
       key: "5",
       label: (
         <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href="https://www.luohanacademy.com"
+          href="#"
           className="flex items-center"
           >
           <span className="p-2 w-[40px] h-[40px] rounded-[50%] bg-custom-green inline-block justify-around flex items-center mr-1">

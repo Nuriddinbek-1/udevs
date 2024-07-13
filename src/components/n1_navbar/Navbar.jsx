@@ -129,7 +129,7 @@ function Navbar() {
             </a>
 
             {/* social icons */}
-            <div className="flex mx-auto my-5">
+            <div className="flex mx-auto my-2">
               <div className="rounded-[50%] bg-[#DDE6FF] p-1 w-[40px] h-[40px]">
                 <img src={instagram} alt="instagram" />
               </div>
